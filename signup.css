@@ -9,6 +9,9 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+}
 
 /*_______________START_LEFT__________________*/
 @font-face {
@@ -59,6 +62,7 @@
 
 
 .right {
-    width: var(--right-side-witdh);
+    width: var(--right-side-witdh); 
+    background-color: rgb(46, 29, 29);
 } 
 
