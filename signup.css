@@ -1,68 +1,151 @@
 :root {
-    --left-side-witdh: 30vw;
-    --right-side-witdh: calc(100vw - var(--left-side-witdh));
+  --left-side-witdh: 30vw;
+  --right-side-witdh: calc(100vw - var(--left-side-witdh));
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
+  display: flex;
 }
 
 /*_______________START_LEFT__________________*/
 @font-face {
-    font-family: "norsebold"; 
-    src: url("./assets/Norse-Bold.otf"); 
+  font-family: "norsebold";
+  src: url("./assets/Norse-Bold.otf");
 }
+
 .left {
-    width: var(--left-side-witdh);
-    height: 100vh;
-    background-image: url(./assets/cedric-letsch-t49vJ2_Jlq8-unsplash.jpg);
-    background-size: cover;  
+  width: var(--left-side-witdh);
+  height: 100vh;
+  background-image: url(./assets/cedric-letsch-t49vJ2_Jlq8-unsplash.jpg);
+  background-size: cover;
 }
+
 .logo {
-    width: 100%;
-    height: 15%;
+  width: 100%;
+  height: 15%;
 
-    background-color:black;
-    opacity: 0.6;
+  background-color: black;
+  opacity: 0.6;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
-    position: relative;
-    top: 20vh;
+  position: relative;
+  top: 20vh;
 }
-.logo > img {
-    height: 100%;
-}
-.logo > .logo-text {
-    font-size: 5rem; 
-    color: white;
-    font-family: "norsebold";
-}
-.left > .credit {
-    position: relative;
-    top: 80vh;
 
-    display: flex;
-    justify-content: center;
+.logo>img {
+  height: 100%;
 }
+
+.logo>.logo-text {
+  font-size: 5rem;
+  color: white;
+  font-family: "norsebold";
+}
+
+.left>.credit {
+  position: relative;
+  top: 80vh;
+
+  display: flex;
+  justify-content: center;
+}
+
 .credit a {
-    color: white; 
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
+
 /*_______________END_LEFT__________________*/
 
 
 .right {
-    width: var(--right-side-witdh); 
-    background-color: rgb(46, 29, 29);
+  width: var(--right-side-witdh);
+  background-color: rgb(164, 182, 176);
+}
+
+.right .introduction {
+  height: 30vh;
+  width: 70ch;
+  font-size: 1.5rem;
+  padding: 4rem 3rem;
+}
+.right form > * {
+  padding: 1rem 3rem;
+}
+form > .top {
+  margin-bottom: 1rem;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.4);
+  background-color: rgb(176, 174, 174);
+}  
+form > .top > div{
+  display: flex; 
+}
+form legend {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+input {
+  all: unset;
+}
+form input {
+  border-radius: 0.4rem;
+  height: 1.5rem;
+  border: 1px solid #ccc;
+  border-color: blue;
+  background-color: whitesmoke;
+
+  padding: 0.5rem;
+  transition: box-shadow 0.3s; 
+  transition: border-color 0.5s;
+}
+input:focus {
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.4);
+  border-color: blue;
+}
+
+
+input:valid{
+  border-color: green;
+}
+input:invalid:not(:focus):not(:placeholder-shown),
+input:focus:invalid:not(:placeholder-shown) {
+  outline: none;
+  border-color: red;
+}
+
+form .createButton {
+  padding: 1rem;
+  width: 15rem;
+  border-radius: 0.5rem;
+
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgb(16, 24, 16);
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.4);
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column; 
+  margin-right: 3rem;
+  margin-bottom: 1rem;
+  width: 16rem;
 } 
+.passwordMismatch {
+  color: red; 
+}
+
+
 

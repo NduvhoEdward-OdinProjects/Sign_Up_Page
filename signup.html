@@ -2,64 +2,81 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="signup.css">
-    <link rel="stylesheet" href="./assets/Norse-Bold.otf">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="signup.css">
+  <link rel="stylesheet" href="./assets/Norse-Bold.otf">
 
 </head>
 
 <body>
 
-    <div class="left">
-        <div class="logo">
-            <img src="./assets/odin-lined.png" alt="odin">
-            <p class="logo-text">ODIN</p>
-        </div>
-        <p class="credit"><a href="https://unsplash.com/photos/t49vJ2_Jlq8">Photo by Cedric Letsch on Unsplash</a></p>
+  <div class="left">
+    <div class="logo">
+      <img src="./assets/odin-lined.png" alt="odin">
+      <p class="logo-text">ODIN</p>
+    </div>
+    <p class="credit"><a href="https://unsplash.com/photos/t49vJ2_Jlq8">Photo by Cedric Letsch on Unsplash</a></p>
+  </div>
+
+  <div class="right">
+    <div class="introduction">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam vero et odit esse, excepturi
+        blanditiis minus, culpa natus similique nostrum exercitationem.</p>
+      <br>
+      <p>You know you wan to.</p>
     </div>
 
-    <div class="right">
-        <div class="introduction">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam vero et odit esse, excepturi
-                blanditiis minus, culpa natus similique nostrum exercitationem delectus dolores
-                doloremque neque adipisci recusandae fugiat accusamus cumque.</p>
+    <form action="#" method="post">
+      <div class="top">
+        <legend>Let's Do This!</legend>
+
+        <div class="names">
+          <div class="label-input">
+            <label for="firstName">FIRST NAME</label>
+            <input type="text" name="firstName" id="firstName" placeholder="John" required>
+          </div>
+          <div class="label-input">
+            <label for="lastName">LAST NAME</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Doe" required>
+          </div>
         </div>
 
-        <div class="form">
-            <form action="#" method="post">
-                <div class="top">
-                    <caption>Let's Do This!</caption>
-                    <div class="names">
-                        <label for="firstName">FIRST NAME</label>
-                        <input type="text" name="firstName" id="firstName">
-                        <label for="lastName">LAST NAME</label>
-                        <input type="text" name="lastName" id="lastName">
-                    </div>
-                    <div class="contacts">
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
-                        <label for="phoneNumber">PHONE NUMBER</label>
-                        <input type="tel" name="phoneNumber" id="phoneNumber">
-                    </div>
-                    <div class="passwords">
-                        <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
-                        <label for="comfirmPassword">COMFIRM PASSWORD</label>
-                        <input type="password" name="comfirmPassword" id="comfirmPassword">
-                    </div>
-                </div>
-
-                <button type="submit">Create Account</button> 
-                <p>Already have an account?, <a href="#">Log In</a></p>
-            </form>
+        <div class="contacts">
+          <div class="label-input">
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" id="email" placeholder="names@mail.com" required>
+          </div>
+          <div class="label-input">
+            <label for="phoneNumber">PHONE NUMBER</label>
+            <input type="number" name="phoneNumber" id="phoneNumber" placeholder="012 345 6789" required>
+          </div>
         </div>
 
-        <div class="cta">
-
+        <div class="passwords">
+          <div class="label-input">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" id="password" class="passwordMismatch" required>
+            <p class="passwordError"></p>
+          </div>
+          <div class="label-input">
+            <label for="comfirmPassword">COMFIRM PASSWORD</label>
+            <input type="password" name="comfirmPassword" id="comfirmPassword" class="passwordMismatch" required>
+          </div>
         </div>
+      </div>
+
+      <div class="bottom">
+        <button type="submit" class="createButton">Create Account</button>
+        <p>Already have an account?, <a href="#">Log In</a></p>
+      </div>
+    </form>
+
+    <div class="cta">
+
     </div>
+  </div>
 
 </body>
 
