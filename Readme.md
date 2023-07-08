@@ -4,7 +4,7 @@ This is a sign-up form designed to collect user information for creating an acco
 
 ## Preview
 
-![Sign Up Form Preview](https://nduvhoedward-odinprojects.github.io/Sign_Up_Page/assets/preview.png)
+![Sign Up Form Preview](./assets/preview.png)
 
 ## Demo
 
