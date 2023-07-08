@@ -1,6 +1,7 @@
 :root {
   --left-side-witdh: 30vw;
   --right-side-witdh: calc(100vw - var(--left-side-witdh));
+  --primary-dark: rgb(16, 24, 16);
 }
 
 * {
@@ -122,8 +123,21 @@ input:focus:invalid:not(:placeholder-shown) {
   outline: none;
   border-color: red;
 }
+.passwordMismatch {
+  border-color: red;
+}
+.passwordMatch {
+  border-color: green;
+}
+#passwordMismatchMsg {
+  color: rgb(156, 40, 40);
+  display: none; 
+}
 .passwordMismatchMsg {
   height: 1rem;
+}
+.defaultMismatchMsg {
+  display: none;
 }
 .showMismatchMsg {
   display: block;
@@ -137,12 +151,20 @@ form .createButton {
   width: 15rem;
   border-radius: 0.5rem;
 
-  font-size: 1rem;
-  font-weight: bold;
-  background-color: rgb(16, 24, 16);
+  background-color: var(--primary-dark);
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.4);
   margin-bottom: 2rem;
   color: #ccc;
+}
+
+form .cta {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+a.cta {
+  text-decoration: none;
+  color: var(--primary-dark);
 }
 
 .label-input {
@@ -152,15 +174,6 @@ form .createButton {
   margin-bottom: 1rem;
   width: 16rem;
 } 
-.passwordMismatch {
-  border-color: red;
-}
-.passwordMatch {
-  border-color: green;
-}
-#passwordMismatchMsg {
-  color: rgb(156, 40, 40);
-  display: none; 
-}
+
 
 

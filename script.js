@@ -4,6 +4,11 @@ let passwordFields = document.querySelectorAll(".passwords input");
 let mismatchMsg = document.querySelector("form .passwords .passwordMismatchMsg p");
 
 comfirmPassword.addEventListener("input", function(event){
+    if (comfirmPassword.value==="") {
+        mismatchMsg.classList.remove("showMismatchMsg")
+        mismatchMsg.classList.add("hideMismatchMsg")
+        return;
+    }
     if (comfirmPassword.value != password.value) {
         mismatchMsg.classList.remove("hideMismatchMsg")
         mismatchMsg.classList.add("showMismatchMsg")
