@@ -113,14 +113,23 @@ input:focus {
   border-color: blue;
 }
 
-
-input:valid{
+form .names input:valid,
+form .contacts input:valid {
   border-color: green;
 }
 input:invalid:not(:focus):not(:placeholder-shown),
 input:focus:invalid:not(:placeholder-shown) {
   outline: none;
   border-color: red;
+}
+.passwordMismatchMsg {
+  height: 1rem;
+}
+.showMismatchMsg {
+  display: block;
+}
+.hideMismatchMsg {
+  display: none;
 }
 
 form .createButton {
@@ -144,7 +153,10 @@ form .createButton {
   width: 16rem;
 } 
 .passwordMismatch {
-  color: red; 
+  border-color: red;
+}
+.passwordMatch {
+  border-color: green;
 }
 #passwordMismatchMsg {
   color: rgb(156, 40, 40);

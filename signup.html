@@ -57,13 +57,15 @@
         <div class="passwords">
           <div class="label-input">
             <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password" class="passwordMismatch" required>
+            <input type="password" name="password" id="password" required>
             <p class="passwordError"></p>
           </div>
           <div class="label-input">
             <label for="comfirmPassword">COMFIRM PASSWORD</label>
-            <input type="password" name="comfirmPassword" id="comfirmPassword" class="passwordMismatch" required>
-            <p id="passwordMismatchMsg">*Password mismatch</p>
+            <input type="password" name="comfirmPassword" id="comfirmPassword" required>
+            <div class="passwordMismatchMsg">
+              <p>*Password mismatch</p>
+            </div>
           </div>
         </div>
       </div>
