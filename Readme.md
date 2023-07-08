@@ -44,4 +44,4 @@ This project is licensed under the [MIT License](https://github.com/nduvhoedward
 ## Acknowledgments
 
 - The form design and code were created by NduvhoEdward.
-- This project was developed as part of TheOdinProjects project.
+- This project was developed as part of TheOdinProject projects.
