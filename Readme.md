@@ -4,7 +4,7 @@ This is a sign-up form designed to collect user information for creating an acco
 
 ## Preview
 
-![Sign Up Form Preview](./assets/preview.png)
+![Sign Up Form Preview](/assets/preview.png)
 
 ## Demo
 
